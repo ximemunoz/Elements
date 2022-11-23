@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+
+body, html{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #1d2b3a;
+}
+ 
+.center {
+    margin: auto;
+  }
+
+.a1{
+  font-family: 'Karla';
+  font-size: 14px; 
+  font-weight: 200;
+  text-align: left;
+  margin-top: 15px;
+  color: black; 
+  line-height: 20px;
+}
+
+.divMainContainer {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  border-radius: 20pt;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(43, 179, 177);
+  font-size: 24px;
+  font-family: 'Karla';
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+.labelSt {
+  color: rgb(191, 223, 50);
+  font-size: 18px;
+  font-family: 'Karla';
+  font-weight: 400;
+  text-align: left;
+  margin: 0%;
+}
+
+.inputBox {
+  position: relative;
+  width: 250px;
+  font-family: 'Karla';
+  margin: 10%;
+  text-align: center;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: #1d2b3a;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: rgba(255,255,255,0.25);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: #00dfc4;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #1d2b3a;
+  border-left: 1px solid #00dfc4;
+  border-right: 1px solid #00dfc4;
+  letter-spacing: 0.2em;
+}
+
+.inputBox:nth-child(2) input:valid ~ span,
+.inputBox:nth-child(2) input:focus ~ span{
+  background: #00dfc4;
+  color: #1d2b3a;
+  border-radius: 2px;
+}
+
+.inputBox:nth-child(3) input:valid ~ span,
+.inputBox:nth-child(3) input:focus ~ span{
+  background: #00dfc4;
+  color: #1d2b3a;
+  border-radius: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+  border: 1px solid #00dfc4;;
+}
+
+.button {
+  background-color: #00dfc4;;
+  color: #1d2b3a;
+  border: none;
+  border-color: #bfdf32;
+  border-radius: 7px;
+  margin-top: 1%;
+  width: 40%;
+  height: auto;
+  font-family: 'Karla';
+  font-size: 16px; 
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 0px;
+}
+
+form{
+  margin: auto;
+}

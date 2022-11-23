@@ -1,0 +1,21 @@
+<% if (messages.error) { %>
+    <%= messages.error %>
+<% } %>
+<head>
+    <link href="public/assets/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+<h1>Login</h1>
+<form class="center" action="/login" method="POST">
+    <div class="inputBox center" style="text-align: center;">
+        <input type="email" id="email" name="email" required="required">
+        <span>EMAIL</span>
+    </div>
+
+    <div class="inputBox center" style="text-align: center;">
+        <input type="password" id="password" name="password" required="required">
+        <span>PASSWORD</span>
+    </div>
+    <button class="button" type="submit">Login</button>
+</form>
+<a href="/login">Login</h>
